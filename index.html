@@ -18,18 +18,23 @@
     </div>
 </div>
 
-.parametro-senha__botao{
-    background-color: var(--fundo-texto);
-    color: var(--branco);
-    border: 2px solid var(--borda);
-    padding: 24px;
-    font-size: 24px;
-}
+<div class="parametro-senha">
+    <h4 class="parametro-senha__titulo">Força da senha</h4>
+    <div class="barra"></div>
+    <div class="forca fraca"></div>
+    <div class="parametro-senha-textos">
+        <p>Fraca</p>
+        <p>Média</p>
+        <p>Forte</p>
+    </div>
+</div>
 
-.parametro-senha__texto{
-    padding: 24px;
-    border-top: 2px solid var(--borda);
-    border-bottom: 2px solid var(--borda);
-    margin: 0;
-    font-size: 24px;
-}
+<div class="forca fraca"></div>
+
+const numeroSenha = document.querySelector('.parametro-senha__texto');
+let tamanhoSenha = 12;
+numeroSenha.textContent = tamanhoSenha;
+
+const botoes = document.querySelectorAll('.parametro-senha__botao');
+
+console.log(botoes)
